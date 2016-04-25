@@ -1,0 +1,207 @@
+/* =======================================
+    style.css
+    use this file for your custom styles
+========================================== */
+
+/* use a box model that makes sense */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* set the default color, font-size, and line height */
+html {
+  color: #333;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1200px; /* change this width to make a wider page!*/
+  padding: 0 1em; /* 1em of padding on the left and right side */
+}
+
+/* make images and embedded media fluid */
+img,
+object {
+  max-width: 100%;
+}
+
+/* type hierarchy- change for your project */
+h1 {
+  color: white;
+  font-size: 3em; /* 48px */
+}
+
+h2 {
+  font-size: 2.25em /* 36px */
+}
+
+h3 {
+  font-size: 1.75em /* 28px */
+}
+
+h4 {
+  font-size: 1.125em /*18px */
+}
+
+/* navigation list styles */
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* =======================================
+    author styles
+    place your custom styles below here
+========================================== */
+header{
+  background-color: red;
+  height: 180px;
+  text-align: center;
+}
+
+body{
+  background-color: white;
+}
+
+.home-content {
+  text-align: center;
+}
+
+footer{
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 160;
+    background-color:green;
+    text-align: center;
+}
+.navigation li {
+  padding: 0; /*remove the list indent*/
+}
+
+.navigation li {
+  list-style: none; /*remove list style*/
+  display: inline-block; /*display list left to right*/
+  padding-right: 20px; /*add space between items*/
+  font-size: 44px;
+  text-align: center;
+}
+
+.navigation li:last-child { /*select only the last li*/
+  padding-right: 0; /*remove padding from this li*/
+}
+
+.logo{
+  height: 175px;
+  width:200px;
+padding: 10px;
+margin-left: 540px;
+margin: auto;
+}
+
+.kelloggs{
+  height: 175px;
+  padding: 10px;
+  width: 200px;
+  float: left;
+}
+.code{
+  padding: 10px;
+  height: 175px;
+  width: 200px;
+  float:right;
+}
+
+.logof{
+  height: 150px;
+  width:180px;
+padding: 7px;
+}
+
+.kelloggsf{
+  height: 150px;
+  padding: 7px;
+  width: 180px;
+  float: left;
+}
+.codef{
+  padding: 7px;
+  height: 150px;
+  width: 180px;
+  float:right;
+}
+.tite {
+  position: relative;
+  margin: 0 auto;
+  margin-left: 300px;
+}
+.center{
+  text-align: center;
+}
+tr{
+  border-color: black;
+  border: solid;
+}
+
+
+
+
+
+
+/* =======================================
+    Layout
+    keep this at the bottom
+========================================== */
+
+@media (min-width: 620px) {
+  .column {
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .column.full {
+    width: 100%;
+  }
+
+  .column.two-thirds {
+    width: 66.7%;
+  }
+
+  .column.half {
+    width: 50%;
+  }
+
+  .column.thirds {
+    width: 33.3%;
+  }
+
+  .column.fourth {
+    width: 25%;
+  }
+
+  .column.flow-opposite {
+    float: right;
+  }
+}
+
+
+/* row used as a clearfix to clear floats */
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row {
+  *zoom: 1;
+}
